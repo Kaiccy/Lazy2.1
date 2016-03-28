@@ -32,10 +32,10 @@
     二、 ViewController.m 类文件的 viewDidLoad 方法中实现
     三、 要在 AppDelegate.m 类文件的 里面实现 ：
     -(void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler   这个方法
- */
+*/
 - (void)thisIsA3DTouchWay{
 
-    UIApplicationShortcutIcon *afei1 = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeMessage];
+    UIApplicationShortcutIcon *afei1 = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeContact];
     UIApplicationShortcutItem *item = [[UIApplicationShortcutItem alloc] initWithType:@"one" localizedTitle:@"Lazy" localizedSubtitle:@"Afei" icon:afei1 userInfo:nil];
     
     [UIApplication sharedApplication].shortcutItems = @[item];

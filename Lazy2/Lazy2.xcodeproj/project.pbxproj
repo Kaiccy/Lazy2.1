@@ -23,6 +23,7 @@
 		6DAEDAD31CA4E36E0049D245 /* H.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAEDAD21CA4E36E0049D245 /* H.m */; };
 		6DAEDAD61CA4E3790049D245 /* J.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAEDAD51CA4E3790049D245 /* J.m */; };
 		6DAEDAD91CA4E3860049D245 /* K.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAEDAD81CA4E3860049D245 /* K.m */; };
+		959D808B1CA903E400502380 /* AfeiWindowTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 959D808A1CA903E400502380 /* AfeiWindowTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		6DAEDADA1CA4E5540049D245 /* MacroDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDefinition.h; sourceTree = "<group>"; };
 		6DAEDADB1CA4E5540049D245 /* Urls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Urls.h; sourceTree = "<group>"; };
 		6DAEDADC1CA4E5540049D245 /* WXHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHeader.pch; sourceTree = "<group>"; };
+		959D80891CA903E400502380 /* AfeiWindowTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AfeiWindowTool.h; sourceTree = "<group>"; };
+		959D808A1CA903E400502380 /* AfeiWindowTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AfeiWindowTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +240,8 @@
 		6D5E5A1F1C9FEA4800FC948F /* Macro */ = {
 			isa = PBXGroup;
 			children = (
+				959D80891CA903E400502380 /* AfeiWindowTool.h */,
+				959D808A1CA903E400502380 /* AfeiWindowTool.m */,
 				6DAEDADA1CA4E5540049D245 /* MacroDefinition.h */,
 				6DAEDADB1CA4E5540049D245 /* Urls.h */,
 				6DAEDADC1CA4E5540049D245 /* WXHeader.pch */,
@@ -430,6 +435,7 @@
 			files = (
 				6DAEDAD01CA4E35A0049D245 /* G.m in Sources */,
 				6DAEDAC71CA4E3050049D245 /* D.m in Sources */,
+				959D808B1CA903E400502380 /* AfeiWindowTool.m in Sources */,
 				6DAEDAD31CA4E36E0049D245 /* H.m in Sources */,
 				6DAEDAC11CA4E2E00049D245 /* B.m in Sources */,
 				6DAEDABE1CA4E2D70049D245 /* A.m in Sources */,

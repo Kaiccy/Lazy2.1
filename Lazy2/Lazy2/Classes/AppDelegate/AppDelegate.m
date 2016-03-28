@@ -15,25 +15,17 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    
     self.window.rootViewController = [LoginViewController new];
-    
-    
-    
-    // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
-    
     self.window.rootViewController = [LoginViewController new];
     
     //This Is A 3D Touch Way
@@ -55,7 +47,13 @@
     UIApplicationShortcutIcon *afei1 = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeMessage];
     UIApplicationShortcutItem *item = [[UIApplicationShortcutItem alloc] initWithType:@"one" localizedTitle:@"Lazy" localizedSubtitle:@"Afei" icon:afei1 userInfo:nil];
     
+    [UIApplication sharedApplication].shortcutItems = @[item];
+}
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
     
+    if ([shortcutItem.localizedTitle isEqualToString:@"Afei"]) {
+        self.window.rootViewController.view.backgroundColor = [UIColor yellowColor];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

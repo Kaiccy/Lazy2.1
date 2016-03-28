@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "HViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -22,12 +22,20 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    LoginViewController *loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
     
-//    HViewController *h = [HViewController new];
     self.window.rootViewController = [LoginViewController new];
     
-<<<<<<< HEAD
+    
+    
+    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    
+    self.window.rootViewController = [LoginViewController new];
+    
     //This Is A 3D Touch Way
     [self thisIsA3DTouchWay];
 
@@ -41,16 +49,13 @@
     二、 ViewController.m 类文件的 viewDidLoad 方法中实现
     三、 要在 AppDelegate.m 类文件的 里面实现 ：
     -(void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler   这个方法
-*/
+ */
 - (void)thisIsA3DTouchWay{
 
-    UIApplicationShortcutIcon *afei1 = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeContact];
+    UIApplicationShortcutIcon *afei1 = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeMessage];
     UIApplicationShortcutItem *item = [[UIApplicationShortcutItem alloc] initWithType:@"one" localizedTitle:@"Lazy" localizedSubtitle:@"Afei" icon:afei1 userInfo:nil];
-=======
->>>>>>> a61e3008203fa725bbdbc195ea4518f4529d84d9
     
     
-    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

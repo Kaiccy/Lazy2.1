@@ -1,13 +1,13 @@
 //
-//  J.m
+//  LoginViewController.h
 //  Lazy2
 //
 //  Created by 君爵信息科技 on 16/3/25.
 //  Copyright © 2016年 Wangxue. All rights reserved.
 //
 
-#import "J.h"
+#import <UIKit/UIKit.h>
 
-@implementation J
+@interface LoginViewController : UIViewController
 
 @end

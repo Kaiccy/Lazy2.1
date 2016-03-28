@@ -10,7 +10,6 @@
 		6D5E59E51C9FE83A00FC948F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5E59E41C9FE83A00FC948F /* main.m */; };
 		6D5E59EE1C9FE83A00FC948F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5E59EC1C9FE83A00FC948F /* Main.storyboard */; };
 		6D5E59F01C9FE83A00FC948F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D5E59EF1C9FE83A00FC948F /* Assets.xcassets */; };
-		6D5E59F31C9FE83A00FC948F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5E59F11C9FE83A00FC948F /* LaunchScreen.storyboard */; };
 		6D5E59FE1C9FE83A00FC948F /* Lazy2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5E59FD1C9FE83A00FC948F /* Lazy2Tests.m */; };
 		6D5E5A091C9FE83B00FC948F /* Lazy2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5E5A081C9FE83B00FC948F /* Lazy2UITests.m */; };
 		6D5E5A261C9FEA4800FC948F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5E5A191C9FEA4800FC948F /* AppDelegate.m */; };
@@ -22,9 +21,10 @@
 		6DAEDAD01CA4E35A0049D245 /* G.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAEDACF1CA4E35A0049D245 /* G.m */; };
 		6DAEDAD31CA4E36E0049D245 /* H.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAEDAD21CA4E36E0049D245 /* H.m */; };
 		6DAEDAD91CA4E3860049D245 /* K.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAEDAD81CA4E3860049D245 /* K.m */; };
-		959D808B1CA903E400502380 /* AfeiWindowTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 959D808A1CA903E400502380 /* AfeiWindowTool.m */; };
 		6DAEDAE01CA514FE0049D245 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAEDADE1CA514FE0049D245 /* LoginViewController.m */; };
 		6DAEDAE11CA514FE0049D245 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DAEDADF1CA514FE0049D245 /* LoginViewController.xib */; };
+		6DFACE2B1CA911300078D164 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DFACE2A1CA911300078D164 /* LaunchScreen.storyboard */; };
+		959D808B1CA903E400502380 /* AfeiWindowTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 959D808A1CA903E400502380 /* AfeiWindowTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,6 @@
 		6D5E59E41C9FE83A00FC948F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6D5E59ED1C9FE83A00FC948F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D5E59EF1C9FE83A00FC948F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6D5E59F21C9FE83A00FC948F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D5E59F41C9FE83A00FC948F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D5E59F91C9FE83A00FC948F /* Lazy2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lazy2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5E59FD1C9FE83A00FC948F /* Lazy2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lazy2Tests.m; sourceTree = "<group>"; };
@@ -78,11 +77,12 @@
 		6DAEDADA1CA4E5540049D245 /* MacroDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDefinition.h; sourceTree = "<group>"; };
 		6DAEDADB1CA4E5540049D245 /* Urls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Urls.h; sourceTree = "<group>"; };
 		6DAEDADC1CA4E5540049D245 /* WXHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHeader.pch; sourceTree = "<group>"; };
-		959D80891CA903E400502380 /* AfeiWindowTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AfeiWindowTool.h; sourceTree = "<group>"; };
-		959D808A1CA903E400502380 /* AfeiWindowTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AfeiWindowTool.m; sourceTree = "<group>"; };
 		6DAEDADD1CA514FE0049D245 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		6DAEDADE1CA514FE0049D245 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		6DAEDADF1CA514FE0049D245 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		6DFACE2A1CA911300078D164 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
+		959D80891CA903E400502380 /* AfeiWindowTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AfeiWindowTool.h; sourceTree = "<group>"; };
+		959D808A1CA903E400502380 /* AfeiWindowTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AfeiWindowTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +136,7 @@
 				6D5E5A161C9FEA4800FC948F /* Classes */,
 				6D5E59EC1C9FE83A00FC948F /* Main.storyboard */,
 				6D5E59EF1C9FE83A00FC948F /* Assets.xcassets */,
-				6D5E59F11C9FE83A00FC948F /* LaunchScreen.storyboard */,
+				6DFACE2A1CA911300078D164 /* LaunchScreen.storyboard */,
 				6D5E59F41C9FE83A00FC948F /* Info.plist */,
 				6D5E59E31C9FE83A00FC948F /* Supporting Files */,
 			);
@@ -410,7 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DAEDAE11CA514FE0049D245 /* LoginViewController.xib in Resources */,
-				6D5E59F31C9FE83A00FC948F /* LaunchScreen.storyboard in Resources */,
+				6DFACE2B1CA911300078D164 /* LaunchScreen.storyboard in Resources */,
 				6D5E59F01C9FE83A00FC948F /* Assets.xcassets in Resources */,
 				6D5E59EE1C9FE83A00FC948F /* Main.storyboard in Resources */,
 			);
@@ -490,14 +490,6 @@
 				6D5E59ED1C9FE83A00FC948F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6D5E59F11C9FE83A00FC948F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6D5E59F21C9FE83A00FC948F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

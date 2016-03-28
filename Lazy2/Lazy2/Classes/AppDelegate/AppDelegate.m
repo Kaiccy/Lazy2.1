@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "HViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -24,14 +24,41 @@
     
     LoginViewController *loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
     
-//    HViewController *h = [HViewController new];
     self.window.rootViewController = [LoginViewController new];
     
     
     
+    // Override point for customization after application launch.
+    
+    
+    //This Is A 3D Touch Way
+    [self thisIsA3DTouchWay];
+
     return YES;
 }
 
+#pragma Mark   This Is A 3D Touch Way  ⬇️⬇️⬇️⬇️
+/*
+    在添加 iPhone 3D Touch 这个功能点的时候三个步骤 ：
+    一、 info.plist 文件中加入 UIApplicationshortcutltems 这个对象
+    二、 ViewController.m 类文件的 viewDidLoad 方法中实现
+    三、 要在 AppDelegate.m 类文件的 里面实现 ：
+    -(void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler   这个方法
+ */
+- (void)thisIsA3DTouchWay{
+
+    UIApplicationShortcutIcon *afei1 = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeMessage];
+    UIApplicationShortcutItem *item = [[UIApplicationShortcutItem alloc] initWithType:@"one" localizedTitle:@"Lazy" localizedSubtitle:@"Afei" icon:afei1 userInfo:nil];
+    
+    [UIApplication sharedApplication].shortcutItems = @[item];
+}
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    
+    if ([shortcutItem.localizedTitle isEqualToString:@"Lazy"]) {
+        self.window.rootViewController.view.backgroundColor = [UIColor yellowColor];
+    }
+}
+#pragma Mark    This Is A 3D Touch Way  ⬆️⬆️⬆️⬆️
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

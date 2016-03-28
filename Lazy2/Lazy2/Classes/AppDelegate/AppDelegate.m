@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +23,9 @@
     [self.window makeKeyAndVisible];
     
     LoginViewController *loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
-    self.window.rootViewController = loginVC;
+    
+//    HViewController *h = [HViewController new];
+    self.window.rootViewController = [LoginViewController new];
     
     
     

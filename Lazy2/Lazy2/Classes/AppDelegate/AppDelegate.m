@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,9 +17,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     
+    LoginViewController *loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    
+//    HViewController *h = [HViewController new];
+    self.window.rootViewController = [LoginViewController new];
+    
+<<<<<<< HEAD
     //This Is A 3D Touch Way
     [self thisIsA3DTouchWay];
 
@@ -37,16 +46,13 @@
 
     UIApplicationShortcutIcon *afei1 = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeContact];
     UIApplicationShortcutItem *item = [[UIApplicationShortcutItem alloc] initWithType:@"one" localizedTitle:@"Lazy" localizedSubtitle:@"Afei" icon:afei1 userInfo:nil];
+=======
+>>>>>>> a61e3008203fa725bbdbc195ea4518f4529d84d9
     
-    [UIApplication sharedApplication].shortcutItems = @[item];
-}
-- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
     
-    if ([shortcutItem.localizedTitle isEqualToString:@"Lazy"]) {
-        self.window.rootViewController.view.backgroundColor = [UIColor yellowColor];
-    }
+    return YES;
 }
-#pragma Mark    This Is A 3D Touch Way  ⬆️⬆️⬆️⬆️
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
